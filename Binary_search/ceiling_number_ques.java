@@ -10,7 +10,8 @@ public class ceiling_number_ques {
         System.out.print("The index on which the number is "+ ans + " and the number is " + arr[ans]);
 
     }
-
+    // this function will gonna return the index of start  if the target not found
+    // which is the little larger element 
     static int ceiling_number(int [] arr , int target ){
         int start = 0 ;
         int end = arr.length - 1;
@@ -29,6 +30,9 @@ public class ceiling_number_ques {
             }
         }
         return start;
+        // If the element is not present the index of the start will be returned because 
+        // when the element is not present between the start and the end then when the while loop break 
+        // then start will be on the end + 1  that element will be little larger then the target 
     }
 
 }
